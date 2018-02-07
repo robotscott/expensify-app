@@ -18,6 +18,4 @@ const jsx = (
 	</Provider>
 );
 
-console.log("testing");
-
 ReactDOM.render(jsx, document.getElementById("app"));
