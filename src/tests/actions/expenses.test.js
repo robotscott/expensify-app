@@ -78,7 +78,7 @@ test("should edit expense from firebase", done => {
 			return database.ref(`expenses/${id}/description`).once("value");
 		})
 		.then((snapshot) => {
-			expect(snapshot.val()).toBe("Mortgage");
+			expect(snapshot.val()).toBe(updates.description);
 			done();
 		});
 });
